@@ -23,6 +23,12 @@ struct LandmarkRow: View {
             
             Spacer()
             
+            if landmark.isFavorite {
+                Image(systemName: "star.fill")
+                    .imageScale(.medium)
+                    .foregroundColor(.yellow)
+            }
+            
         }
     }
 }

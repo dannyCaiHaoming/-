@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  HandlingUserInput
+//  DrawPathsShapes
 //
-//  Created by 蔡浩铭 on 2020/11/2.
+//  Created by 蔡浩铭 on 2020/11/3.
 //
 
 import UIKit
@@ -24,9 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: contentView.environmentObject(UserData()))
-                
-            //UIHostingController(rootView: contentView)
+            window.rootViewController = UIHostingController(rootView: contentView)
             self.window = window
             window.makeKeyAndVisible()
         }
